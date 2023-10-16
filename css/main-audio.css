@@ -1,0 +1,1001 @@
+/* main  */
+img {
+    width: 100%;
+    object-fit: cover;
+}
+p {
+    opacity: .7;
+}
+/* main bg  */
+.bg-audio {
+    height: 520px;
+    background-image: url(../img/bg-audio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.bg-audio h1,
+.bg-audio h2 {
+    width: 1140px;
+    max-width: 100%;
+    font-size: 3rem;
+    line-height: 50px;
+    margin: auto;
+    color: var(--with-color);
+    padding-top: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: revealText 5s forwards;
+}
+
+.bg-audio h2 {
+    font-size: 1.5rem;
+    padding: 0;
+    line-height: normal;
+}
+
+/* main audio news  */
+
+.audio-news {
+    width: 1140px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.audio-news_head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.audio-news_head a {
+    font-size: 2rem;
+    margin-left: 10px;
+    color: var(--black-color);
+    
+}
+
+.audio-news_head h1 {
+    margin-left: 10px;
+}
+
+.audio-news_head a:after {
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.audio-news_img {
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out;
+}
+
+.audio-news_img img {
+    width: 268px;
+    height: 170px;
+}
+
+.audio-news_img figure {
+    margin: 0 10px;
+    background-color: var(--with-color);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.fa-circle-chevron-left,
+.fa-circle-chevron-right {
+   font-size: 2rem;
+   color: #BBBBBB;
+}
+
+.btn-ck {
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    border: none;
+}
+
+.btn-ck+.btn-ck {
+    margin-left: -8px;
+}
+
+.days-post {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.days-post_calenda {
+    margin-left: 10px;
+    font-size: 1.2rem;
+    color: var(--grey-color);
+}
+
+.days-post_profile a {
+    
+    color: var(--grey-color);
+}
+.fa-calendar,
+.fa-circle-user {
+    color: var(--brown-color);
+}
+
+.days-post_profile {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: var(--grey-color);
+}
+
+.audio-news_img h1 a {
+    font-size: 1.3rem;
+    line-height: 25px;
+    color: var(--black-color);
+    
+    font-weight: 550;
+    opacity: .9;
+}
+
+.audio-news_img h1 {
+    margin: 0 10px 20px 10px;
+}
+
+.entity-views {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.entity-views a {
+    font-size: 1.3rem;
+    color: var(--grey-color);
+}
+
+.entity-views span+span {
+    margin-left: 20px;
+}
+
+/* main audio reviews */
+.audio-reviews {
+    width: 1140px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.audio-reviews_head {
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.audio-reviews_head a {
+    font-size: 2rem;
+    margin-left: 10px;
+    color: var(--black-color);
+    
+}
+
+.audio-reviews_head a:nth-child(1) {
+    font-size: 1rem;
+    background-color: var(--grey-color);
+    color: var(--with-color);
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.audio-reviews_head h1:nth-child(1) {
+    margin-left: 10px;
+}
+
+.audio-reviews_head a:nth-child(2):after {
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.audio-reviews_content {
+    display: grid;
+    grid-template-columns: repeat(3,365px);
+    gap: 20px;
+    overflow: hidden;
+}
+
+.audio-reviews_content--range{
+    width: 370px;
+    height: auto;
+    padding-bottom: 20px;
+    transition: opacity 0.5s, transform 0.5s ease-in-out;
+}
+
+.range-2,
+.range-4,
+.range-6 {
+    border: 2px solid var(--gray-color);
+    background-color: white;
+}
+
+.range-3 span,
+.range-1 span,
+.range-5 span,
+.range-1 p,
+.range-3 p,
+.range-5 p {
+    color: var(--with-color);
+}
+.range-3 h1 a,
+.range-5 h1 a,
+.range-1 h1 a {
+    --black-color: var(--with-color);
+}
+
+.range-1 {
+    background-image: url(../img/audio_reviews-1.jpg);
+}
+.range-3 {
+    background-image: url(../img/audio_reviews-2.jpg);
+}
+.range-5 {
+    background-image: url(../img/audio_reviews-3.jpg);
+}
+.range-1,
+.range-3,
+.range-5 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(50px);
+}
+
+.range-3 span a,
+.range-1 span a,
+.range-5 span a {
+    --grey-color: var(--with-color);
+}
+
+.audio-reviews_content-link a {
+    background-color:var(--sky-color);
+    color: var(--with-color);
+    font-size: 1rem;
+    padding: 10px;
+    
+    text-transform: uppercase;
+}
+
+.audio-reviews_content-link {
+    margin: 20px;
+}
+
+.audio-reviews_content .days-post {
+    margin: 0 10px;
+}
+
+.audio-reviews_content h1 {
+    margin: 20px 16px;
+}
+
+.audio-reviews_content h1 a {
+    
+    font-size: 1.7rem;
+    font-weight: 550;
+    color: var(--black-color);
+    opacity: .8;
+}
+
+.audio-reviews_content--range p {
+    margin: 0 16px;
+    font-size: 1.35rem;
+    max-width: 335px;
+    overflow-wrap:break-word;
+    margin-bottom: 20px;
+}
+
+.entity-views_rate {
+    margin: 0 16px 12px;
+}
+
+.audio-reviews_content .entity-views {
+    margin: 0 16px;
+}
+
+.entity-views--bold {
+    font-weight: bold;
+}
+
+.fa-star {
+    color: var(--yellow-color);
+    font-size: 1rem;
+}
+
+/* main audio features  */
+.audio-features_head {
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.audio-features_head a {
+    font-size: 2rem;
+    margin-left: 10px;
+    color: var(--black-color);
+    
+}
+
+.audio-features_cate {
+    width: 1140px;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.audio-features {
+    flex: 0.72;
+}
+
+.categories {
+    flex: 0.25;
+}
+
+.audio-features_content--flex {
+    flex: 1;
+    height: auto;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.audio-features_content--flex h1 a {
+    
+    color: var(--black-color);
+    font-size: 1.35rem;
+    font-weight: 550;
+}
+
+#link-features1,
+#link-features2,
+#link-features3 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    
+    color: var(--with-color);
+    background-color: var(--sky-color);
+    font-size: 0.8rem;
+    padding: 8px;
+    
+    text-transform: uppercase;
+}
+
+.audio-features_head .view-all {
+    font-size: 1rem;
+    background-color: var(--grey-color);
+    --black-color: var(--with-color);
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.audio-features_head a:nth-child(2):after {
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.audio-features_content .days-post_profile a {
+    font-size: 1.2rem;
+    opacity: .7;
+    margin: 0;
+}
+
+.audio-features_content h1 a {
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: 550;
+}
+
+.audio-features_content h1 {
+    margin: 15px 10px 30px;
+}
+
+.audio-features_content--flex {
+    border: 2px solid var(--gray-color);
+}
+
+.audio-features_content .entity-views a{
+    font-size: 1.2rem;
+    color: var(--grey-color);
+}
+
+.audio-features_content .entity-views {
+    width: 200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.ads1 {
+    margin-top: 20px;
+    position: relative;
+}
+
+.ads1 a{
+    margin: 0;
+}
+
+.ads1 img {
+    height: 150px;
+}
+
+#btn-ads1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    cursor: pointer;  
+    font-size: 2rem;
+    opacity: .8;
+}
+
+/* cate  */
+.categories {
+    background-color: var(--with-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.categories h1 a {
+    font-size: 2rem;
+    text-transform: capitalize; 
+    color: var(--black-color);
+    
+}
+
+.categories h1 {
+    margin-left: 16px;
+    margin-top: 25px;
+    padding-bottom: 30px;
+}
+
+.categories h2 {
+    font-size: 1.8rem;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+.categories ul li {
+    list-style: none;
+    margin-left: -20px;
+    max-width: 250px;
+    border-top: 1px solid var(--grey-color);
+}
+
+.categories ul li a {
+    color: var(--black-color);
+    
+}
+
+.categories ul li:nth-child(1) {
+    border-top: none;
+}
+
+
+.categories li a {
+    font-size: 1.3rem;
+    font-weight: normal;
+    line-height: 50px;
+}
+
+.categories-list_number {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.categories-list_number--ck {
+    border-radius: 50%;
+    border-image-slice: 1;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.follow {
+    margin-top: 20px;
+}
+
+.follow a {
+    margin-left: 30px;
+}
+
+.follow p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.3rem;
+    line-height: 25px;
+}
+
+.follow i {
+    font-size: 2rem;
+}
+
+
+/* more  */
+.more_news {
+    display: flex;
+    justify-content: space-between;
+    width: 1140px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.more_news-audio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    gap:20px;
+}
+
+.more_news-audio {
+    flex: 0.72;
+}
+
+.ads2 {
+    flex: 0.25;
+}
+
+.more_news-audio img {
+    width: 260px;
+    height: 240px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.audio_guides,
+.audio_opinions,
+.audio_buys {
+    max-width: 100%;
+}
+
+.audio_opinions,
+.audio_buys,
+.audio_guides {
+    position: relative;
+}
+
+.audio-more_news-head a,
+.audio-more_news-head a,
+.audio-more_news-head a {
+    font-size: 2rem;
+    font-weight: 550;
+    
+    color: var(--black-color);
+}
+
+.audio-more_news-head,
+.audio-more_news-head,
+.audio-more_news-head {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.more-new_links {
+    position: absolute;
+    top: 80px;
+    left: 10px;
+}
+
+.more-new_links a {
+    background-color: var(--sky-color);
+    font-size: 0.8rem;
+    color: var(--with-color);
+    padding: 8px;
+    text-transform: uppercase;
+    
+}
+
+.more-new_links-2 {
+    margin-left: 10px;
+}
+
+.days-post_more {
+    position: absolute;
+    top: 90px;
+}
+
+.days-post_more .days-post_profile {
+   margin-left: 50px;
+}
+
+.entity-views_more a,
+.entity-views_more .entity-views--bold,
+.days-post_more .fa-calendar,
+.days-post_more .fa-circle-user,
+.days-post_more span,
+.days-post_more a {
+    color: var(--with-color);
+}
+
+.more-head_link a {
+    --black-color: var(--with-color);
+    font-size: 1.5rem;
+    font-weight: 550;
+    
+    color: var(--black-color);
+}
+
+.more-head_link {
+    position: absolute;
+    margin: 0 16px;
+    top: 150px;
+}
+
+.entity-views_more {
+    position: absolute;
+    top: 240px;
+    border: 1px solid var(--grey-color);
+    width: 238px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.audio-more_news-head a:after {
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.more_news-box li+li {
+    border-top: 1px dashed var(--gray-color);
+}
+
+.more_news-box li {
+    padding: 20px 0;
+}
+.more_news-box li a {
+    color: var(--black-color);
+    font-size: 1.35rem;
+}
+
+.more_news-box {
+    width: 260px;
+    max-width: 100%;
+    list-style: none;
+    border-bottom: 2px solid var(--gray-color);
+    border-right: 2px solid var(--gray-color);
+    border-left: 2px solid var(--gray-color);
+    margin-top: -2px; 
+    padding: 20px 20px 0;
+}
+.more_news-box a {
+    
+    font-size: 1.35rem;
+    line-height: 25px;
+    color: var(--grey-color);
+}
+
+.more_news-box span {
+    color: var(--grey-color);
+}
+
+.ads2 {
+    margin-top: 20px;
+    position: relative;
+}
+
+.ads2 img {
+    width: 100%;
+    height: 350px;
+}
+
+#btn-ads2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    opacity: .8;
+}
+
+/* recent post  */
+.recent_posts {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--gray-color);
+    background-color: var(--with-color);
+    margin-top: 20px;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s ease-in-out ;
+}
+
+.recent_posts h1 {
+    margin: 20px 0;
+    margin-left: 16px;
+}
+.recent_posts h1 a{
+    font-size: 2rem;
+    
+    font-weight: 550;
+    color: var(--black-color);
+}
+
+.recent_posts hr {
+    opacity: .3;
+    width: 250px;
+    margin: 10px auto;
+}
+
+.post_img {
+    flex-wrap: nowrap;
+}
+
+.post_img a {
+    font-size: 1.35rem;
+    
+    color: var(--black-color);
+}
+
+.post_img a:nth-child(1) {
+    padding-left: 20px;
+}
+
+.post_img a:nth-child(2) {
+    padding: 0 15px 15px 15px;
+}
+.post_img img {
+    width: 80px;
+    height: 80px;
+}
+
+/* trend  */
+.bg-trend {
+    background-image: url(../img/bg-trend.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin-top: 25px;
+}
+
+.trending {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+}
+
+.trending div {
+    margin: 0 5px;
+}
+
+.trending img {
+    width: 240px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trend_head {
+ width: 1140px;
+ max-width: 100%;
+ margin: 0 auto;
+ padding-top: 20px;
+}
+
+.trend_head a {
+    
+    font-size: 2rem;
+    color: var(--with-color);
+    font-weight: 550;
+}
+
+.trend_head a:after {
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.trending_img   {
+    position: relative;
+}
+
+.trending_links {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    text-align: center;
+    color: var(--with-color);
+    
+    font-size: 1.5rem;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 45%;
+    background-color:var(--grey-color);
+    color: var(--with-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .3 ease;
+    opacity: .7;
+    border-style: none;
+    outline: none;
+}
+
+.prev-button {
+    left: 10px;
+}
+.next-button {
+    right: 10px;
+}
+
+.show_more-trend {
+    width: 1140px;
+    max-width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.show_more-trend a {
+    
+    background-color: var(--red-color);
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 1.4rem;
+    color: var(--with-color);
+}
+
+/* popular */
+.popular {
+    width: 1140px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.popular--flex {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    flex-wrap: wrap;
+    transform: translateY(50px);
+    transition: opacity 2s, transform 1.5s;
+}
+
+.popular_links {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    
+    font-size: 2rem;
+    max-width: 780px;
+    overflow-wrap: break-word;
+    color: var(--with-color);
+    font-size: 2rem;
+}
+
+.popular--flex div {
+    flex: 1;
+}
+
+.popular--flex img {
+    height: 100%;
+    max-width: 100%;
+}
+
+.popular h1 a {
+    
+    font-size: 2rem;
+    color: var(--black-color);
+}
+
+.popular h1 {
+    margin-bottom: 20px;
+}
+
+.popular a:after {
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.popular li a {
+    font-size: 1.35rem;
+    color: var(--black-color);
+}
+
+.popular li {
+    border-top: 1px solid var(--grey-color);
+    list-style: none;
+    padding: 20px 0;
+}
+
+.popular li:first-child {
+    border-top: none;
+}
+
+/* hover css  */
+
+.audio-features_content--flex img:hover,
+.audio-news_img img:hover {
+    animation: zoomInOut 0.5s forwards;
+}
+
+
+
+.audio-news_head a:hover:after,
+.audio-reviews_head a:nth-child(2):hover:after,
+.trend_head a:hover:after,
+.audio-features_head a:nth-child(2):hover:after {
+    width: 100%;
+    left: 0;
+    background-color: var(--pink-color);
+}
+
+.audio_guides .audio-more_news-head a:hover:after {
+    width: 43%;
+    left: 0;
+    background-color: var(--pink-color);
+}
+.audio_buys .audio-more_news-head a:hover:after {
+    width: 49%;
+    left: 0;
+    background-color: var(--pink-color);
+}
+.audio_opinions .audio-more_news-head a:hover:after {
+    width: 50%;
+    left: 0;
+    background-color: var(--pink-color);
+}
+.popular h1 a:hover:after {
+    width: 8.2%;
+    left: 0;
+    background-color: var(--pink-color);
+}
+
+#btn-ads2:hover,
+#btn-ads1:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.prev-button:hover,
+.next-button:hover {
+    transform: scale(1.3);
+    opacity: 1;
+    cursor: pointer;
+}
+.show_more-trend a:hover,
+.view-all:hover,
+.btn-ck:hover,
+.audio-reviews_head a:nth-child(1):hover {
+    opacity: .8;
+    cursor: pointer;
+    --pink-color:var(--with-color);
+}
+
+.categories ul li:hover {
+    background-image: linear-gradient(0, #E1E6F8, #CFF7EE);
+    cursor: pointer;
+}
+
+/* color icon  */
+
+:where(.fa-headset, .fa-newspaper, .fa-expand, .fa-fire, .fa-arrow-trend-up) {
+    color: var(--red-color);
+}
+

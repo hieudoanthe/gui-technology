@@ -1,0 +1,86 @@
+:root {
+    --with-color: #fff;
+    --black-color: #000;
+    --grey-color: #7d7d7d;
+    --red-color: #e70f0f;
+    --pink-color: #e08282;
+    --yellow-color: #FFD62C;
+    --sky-color: #286396;
+    --brown-color: #EA6060;
+    --gray-color: #e9e9e9;
+    --violet-color: #a805f4;
+    --green-pastel-color: linear-gradient(180deg,#a805f4,#1e4ca265);
+    --green-color: #008900;
+}
+
+.fa-square-facebook {
+    color: #2176FF;
+}
+
+.fa-square-twitter {
+    color: #6DDBF7;
+}
+
+.fa-square-google-plus {
+    color: #CD4033;
+}
+
+.fa-square-instagram {
+    color: #EA4C52;
+}
+
+.fa-square-rss {
+    color: #F19337;
+}
+
+:is(.fa-bookmark, .fa-eye, .fa-comment, .fa-square-facebook,
+    .fa-square-twitter, .fa-square-google-plus, .fa-square-instagram,
+    .fa-square-rss, html a):hover {
+    color: var(--pink-color);
+    cursor: pointer;
+}
+.fa-star:hover {
+    color: var(--red-color);
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    list-style: 1.6rem;
+    font-family: Roboto, 'sans-serif';
+    box-sizing: border-box;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid_row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+}
+
+@keyframes revealText {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 90%;
+    }
+}
