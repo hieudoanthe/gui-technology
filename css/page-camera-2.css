@@ -5,16 +5,19 @@
     --grey-color: #7d7d7d;
     --red-color: red;
 }
+
 html {
     font-size: 62.5%;
     list-style: 1.6rem;
     font-family: Roboto, sans-serif;
     box-sizing: border-box;
 }
-*{
+
+* {
     text-decoration: none;
 }
-.cameras{
+
+.cameras {
     max-width: 1140px;
     display: flex;
     margin: 20px auto;
@@ -24,7 +27,8 @@ html {
     font-weight: 640px;
     color: rgb(226, 115, 115);
 }
-.main{
+
+.main {
     margin: 20px auto;
     max-width: 1140px;
     display: flex;
@@ -32,190 +36,231 @@ html {
     justify-content: space-between;
     font-size: 13.5px;
 }
+
 /*  */
-.black{
+.black {
     padding-bottom: 10px;
     border-bottom: 5px dotted brown;
 }
-.black_content{
+
+.black_content {
     padding: 13px;
     background-color: brown;
     color: white;
     border-top-right-radius: 11px;
     border-top-left-radius: 11px;
 }
-.main_left{
+
+.main_left {
     max-width: 790px;
     flex: 0.5;
     margin-right: 20px;
 }
-.main_left--click{
+
+.main_left--click {
     display: flex;
     margin-top: 20px;
 }
-.main_left--click--more{
+
+.main_left--click--more {
     margin-right: 30px;
 
 }
-.click{
+
+.click {
     padding: 7px;
-    font-size: 17px;   
+    font-size: 17px;
     color: #7d7d7d;
-    background-color:#F7F7F7;
+    background-color: #F7F7F7;
     border: 1px solid #7d7d7d;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
+
 .click:hover {
     color: white;
     background-color: brown;
 }
-.main_content{
+
+.main_content {
     display: flex;
     margin: 30px auto;
-    justify-content: space-between ;
+    justify-content: space-between;
 }
-.main_content--left img{
+
+.main_content--left img {
     width: 100%;
-    height: 280px;
+    height: 300px;
     border-radius: 10px;
     object-fit: cover;
 }
-.main_content--right_h2{
+
+.main_content--right_h2 {
     font-size: 20px;
 }
-.main_content--right_span{
+
+.main_content--right_span {
     border: 1px dashed #7d7d7d;
     padding: 10px;
     margin-top: 10px;
     font-size: 17px;
 }
-.main_content--left{
+
+.main_content--left {
     position: relative;
     flex: 0.42;
 }
-.main_content--right{
+
+.main_content--right {
     flex: 0.55;
-    
+
 }
+
 /* left */
-.main_right{
+.main_right {
     flex: 0.65;
 }
-.iconn{
+
+.iconn {
     display: flex;
-    margin : 40px auto;
+    margin: 40px auto;
     margin-bottom: 50px;
 }
-.iconn{
+
+.iconn {
     font-size: 40px;
     margin-right: 20px;
 }
-.main_right--comment{
+
+.main_right--comment {
     display: flex;
     justify-content: space-between;
     padding-bottom: 25px;
     margin: 40px auto;
     /* border-bottom: 1px dashed #7d7d7d; */
 }
-.main_right--comment--left img{
+
+.main_right--comment--left img {
     width: 100%;
 }
-.main_right--comment--left{
+
+.main_right--comment--left {
     position: relative;
     flex: 0.4;
 }
-.main_right--comment--right{
+
+.main_right--comment--right {
     flex: 0.52;
 }
-.quangcao img{
+
+.quangcao img {
     width: 100%;
 }
+
 /* right */
 /*  */
 /* year */
-.year{
-    width: 160px;
+.year {
+    width: 180px;
     display: flex;
     padding: 3px 0 3px;
     border: 1px dashed #ccc;
 }
-.year_i{
+
+.year_i {
     font-size: 15px;
     color: rgb(121, 3, 3);
 }
-.year_more a{
+
+.year_more a {
     font-size: 13.5px;
-    color: #333 ;
+    color: #333;
 
 }
-.year_more{
+
+.year_more {
     margin-left: 10px;
 }
+
 /*  */
-.book_comment{
+.book_comment {
     margin: 50px;
     display: flex;
     padding-bottom: 10px;
     border-bottom: 1px dashed #7d7d7d;
 }
-.book_comment--left img{
+
+.book_comment--left img {
     width: 100px;
 }
-.book_comment--left{
+
+.book_comment--left {
     margin-right: 15px;
 }
-.book_comment--right{
+
+.book_comment--right {
     margin-top: 10px;
     font-size: 15px;
 }
-.book_comment--more1{
+
+.book_comment--more1 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
-.book_comment--more_more{
+
+.book_comment--more_more {
     flex: 0.49;
 }
+
 #nameInput,
-#emailInput{
+#emailInput {
     padding: 10px 200px 10px 0;
     opacity: 0.8;
 }
-#commentInput{
+
+#commentInput {
     padding: 10px 610px 300px 0;
     opacity: 0.8;
 }
-.gui{
+
+.gui {
     margin-top: 20px;
     background-color: brown;
     color: white;
     padding: 10px;
     border-radius: 5px;
 }
-.star{
+
+.star {
     display: flex;
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 13px;
     color: brown;
 }
-.mouse:hover{
+
+.mouse:hover {
     cursor: grab;
 }
+
 .hight {
-    transition: transform 0.3s; /* Làm mượt hiệu ứng */
+    transition: transform 0.3s;
+    /* Làm mượt hiệu ứng */
 }
+
 .mouse:hover .hight {
-    transform: scale(1.1); /* Phóng to ảnh khi hover vào đường dẫn (link) cha */
+    transform: scale(1.1);
+    /* Phóng to ảnh khi hover vào đường dẫn (link) cha */
 }
-.hot{
+
+.hot {
     position: absolute;
     top: 10px;
     left: 0;
     background-color: rgb(238, 32, 32);
     color: white;
     padding: 5px;
-    border-top-right-radius: 3px ;
-    border-bottom-right-radius: 3px ;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }

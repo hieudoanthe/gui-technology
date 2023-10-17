@@ -6,6 +6,33 @@
     --red-color: red;
 }
 
+.lehoa_background {
+    background-image: url(../img/camera-hoa.jpg);
+    height: 330px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.lehoa_background--comment {
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(36, 3, 3);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    left: 150px;
+    animation: slide-down 2s linear forwards;
+}
+
+@keyframes slide-down {
+    to {
+        top: 100px;
+    }
+}
+
 .hight {
     transition: transform 0.3s;
     /* Làm mượt hiệu ứng */
@@ -87,7 +114,7 @@ html {
 .main_left--more_right {
     flex: 0.28;
     margin: auto;
-    padding: 60px 0 19px 10px;
+    padding: 35px 0 19px 10px;
     border: 1px solid #ccc;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 
@@ -372,7 +399,7 @@ html {
 
 /* year */
 .year {
-    width: 160px;
+    width: 180px;
     display: flex;
     padding: 3px 0 3px;
     border: 1px dashed #ccc;
