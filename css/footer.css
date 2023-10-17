@@ -26,7 +26,7 @@
 
 .sig-up button {
     color: white;
-    background-color: #EA6060;
+    background-color: #505050;
     outline: none;
     border-style: none;
     padding: 10px 0;
@@ -34,6 +34,9 @@
     line-height: 38px;
     font-weight: 400px;
     flex: 0.2;
+}
+.sig-up button:hover {
+    background-color: #EA6060;
 }
 
 .end {
@@ -58,32 +61,45 @@
 .about-tech h1 {
     font-size: 14px;
     line-height: 18px;
-    margin-right: 30px;
+    margin-right: 13px;
 }
 
 .about-tech figcaption {
     font-size: 15px;
     opacity: .6;
-    line-height: 22px;
-    margin-left: -15px;
-    margin-top: 15px;
-    max-width: 300px;
+    line-height: 25px;
+    margin-left: -40px;
+    width: 250px;
 }
 
 .discover a {
     font-size: 12px;
-    line-height: 10px;
+    line-height: 15px;
     margin-top: 15px;
     opacity: 1;
-}
-
-.about-tech img {
-    width: 266px;
+    color: #505050;
 }
 
 .editor-picks img {
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 75px;
+    margin-left: -40px;
+    margin-top: 15px;
+}
+.editor-picks figcaption {
+    margin-left: 15px;
+}
+.editor-picks h2 { 
+    font-size: 14px;
+    width: 180px;
+    font-weight: 500;
+}
+figcaption a {
+    color: #505050;
+}
+.entity_rate i{
+    font-size: 10px;
+    color: rgb(233, 233, 101);
 }
 
 .tech-photos_img img {
@@ -96,7 +112,14 @@
     grid-template-columns: repeat(3, 90px);
     gap: 2px;
 }
-
+.footer-social {
+    margin-top: 20px;
+}
+.footer-social a{
+    font-size: 12px;
+    padding-right: 30px;
+    color: #505050;
+}
 /* cuon trang  */
 #back-to-top {
     display: none;
