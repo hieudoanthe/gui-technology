@@ -1,241 +1,152 @@
-:root {
-    --with-color: #fff;
-    --blackk-color: #000;
-    --black-color: #333;
-    --grey-color: #7d7d7d;
-    --red-color: red;
+.main-left a:hover {
+    color: #000;
 }
 
-html {
-    font-size: 62.5%;
-    list-style: 1.6rem;
-    font-family: Roboto, sans-serif;
-    box-sizing: border-box;
+.entity_meta a:hover {
+    color: #82D3E5;
 }
 
-* {
-    text-decoration: none;
-}
-
-.main {
-    margin: 20px auto;
-    max-width: 1140px;
+.entity_text {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    font-size: 13.5px;
 }
 
-.main img {
-    width: 97%;
+.entity_text-box--fixed ol {
+    width: 180px;
+    height: 100%;
+    font-size: 1.5rem;
+    line-height: 27px;
+    margin-top: 50px;
+    background-color: var(--with-color);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
 }
 
-.chose-more {
-    margin: 20px 0 20px 0;
+.entity_text-box--fixed ol li a:hover {
+    color: var(--pink-color);
+    cursor: pointer;
+    text-decoration: underline;
 }
 
-.book_comment {
-    margin: 50px;
+.entity_text-par p {
+    max-width: 387.7px;
+    font-size: 1.35rem;
+}
+
+.entity_text-pars a {
+    font-size: 1.35rem;
+}
+
+.entity_text-pars a:hover {
+    color: var(--pink-color);
+}
+
+.entity_text-pars p span,
+.entity_text-par p span {
+    font-size: 1.7rem;
+    font-weight: 550;
+}
+
+.entity_text-box {
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.entity_text-box p {
+    width: 260px;
+    font-size: 2rem;
+    padding: 20px;
+    line-height: 80px;
+}
+
+.entity_text-box--fixed {
+    position: fixed;
+    top: 400px;
+    left: -20px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.entity_text--shadow:first-of-type {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.entity_deals {
+    position: relative;
+    margin-top: 40px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.entity_deals a {
+    position: absolute;
+    left: 0;
+    top: -20px;
+    background-color: var(--green-color);
+    font-size: 1.35rem;
+    color: var(--with-color);
+    padding: 4px 6px;
+}
+
+.entity_comment {
     display: flex;
-    border-bottom: 1px dashed #7d7d7d;
-}
-
-.book_comment--left img {
-    width: 100px;
-}
-
-.book_comment--left {
-    margin-right: 15px;
-}
-
-.book_comment--right {
-    margin-top: 10px;
-    font-size: 15px;
-}
-
-/* left */
-.main_left {
-    flex: 0.9;
-}
-
-.cameras {
-    display: flex;
-    font-size: 34px;
-    margin: 10px 0 30px;
-    font-weight: 640px;
-    color: rgb(226, 115, 115);
-}
-
-.main_left--content h1 {
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.left--new_new {
-    padding: 5px;
-    background-color: rgb(238, 32, 32);
-    color: white;
-}
-
-.left--new {
-    display: flex;
-    margin: auto;
-    opacity: 0.8;
-    font-size: 13.5px;
-    margin: 15px 0 15px;
-}
-
-.document {
-    font-size: 17px;
-    line-height: 1.3;
-}
-
-.document span {
-    opacity: 0.8;
-    line-height: 1.7;
-}
-
-.document_more {
-    display: flex;
-    font-size: 17px;
-    line-height: 1.7;
-    justify-content: space-between;
-}
-
-.document_more--left {
-    flex: 0.5;
-    opacity: 0.8;
-}
-
-.document_more--right {
-    flex: 0.48;
-}
-
-.document_more--right_1 {
-    font-size: 18px;
-    color: white;
-    background-color: brown;
-    padding: 10px;
-}
-
-.document_more--right_2 {
-    padding: 10px;
-    opacity: 0.8;
-    border: 1px solid #7d7d7d;
-}
-
-.book_comment--more1 {
-    display: flex;
-    justify-content: space-between;
+    border-top: 2px solid var(--gray-color);
     margin-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
 }
 
-.book_comment--more_more {
-    flex: 0.49;
+.entity_comment img {
+    width: 80px;
+    height: 60px;
 }
 
-#nameInput,
-#emailInput {
-    padding: 10px 230px 10px 0;
-    opacity: 0.8;
-}
-
-#commentInput {
-    padding: 10px 670px 300px 0;
-    opacity: 0.8;
-}
-
-/* right */
-.main-content {
-    font-size: 25px;
+.entity_comment a {
+    font-size: 1.6rem;
     font-weight: bold;
-    margin: px 0 40px 0;
-    display: flex;
-    justify-content: space-between;
 }
 
-.main_right {
-    flex: 0.035;
+.entity_comment p {
+    font-size: 1.35rem;
+    margin-top: 0;
+}
+
+.entity_comments figure:nth-child(odd) {
+    margin-left: 40px;
+}
+
+.reply {
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
     display: inline;
 }
 
-.main_right--sticky {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 90px;
+.reply button {
+    font-size: 1.2rem;
+    outline: none;
+    border-style: none;
+    padding: 4px;
+    background-image: var(--green-pastel-color);
+    color: var(--with-color);
 }
 
-.main_right--one {
-    position: relative;
-    margin: 20px 0 20px;
+.fa-thumbs-up,
+.fa-thumbs-down {
+    font-size: 1.6rem;
+    margin-right: 5px;
+    color: var(--grey-color);
+    padding: 4px;
+    background-color: var(--gray-color);
 }
 
-.main_right--one h2 {
-    position: absolute;
-    top: 65%;
-    left: 4%;
-    font-weight: bold;
-    color: #333;
-    background-color: antiquewhite;
-    /* opacity: 0.8; */
-}
-
-.gui {
-    margin-top: 20px;
-    background-color: brown;
-    color: white;
-    padding: 10px;
-}
-
-.quangcao {
-    max-width: 1140px;
-    margin: auto;
-}
-
-.quangcao img {
-    width: 100%;
-}
-
-.hight {
-    transition: transform 0.3s;
-    /* Làm mượt hiệu ứng */
-}
-
-.chose_hight:hover .hight {
-
-    transform: scale(1.06);
-    /* Phóng to ảnh khi hover vào đường dẫn (link) cha */
-}
-
-.hot {
-    position: absolute;
-    top: 10px;
-    left: 0;
-    background-color: rgb(238, 32, 32);
-    color: white;
-    padding: 5px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-}
-
-/*  */
-.mouse:hover {
-    cursor: grab;
-}
-
-.star {
-    display: flex;
-    margin-bottom: 10px;
-    font-size: 13px;
-    color: brown;
-}
-
-.icon {
-    font-size: 20px;
-    margin-right: 10px;
-}
-
-.blue {
-    color: #2F9ED4;
-    text-decoration: underline;
+.add_comment button {
+    margin-top: 10px;
+    border-style: none;
+    outline: none;
+    font-size: 2rem;
+    color: var(--with-color);
+    padding: 10px 15px;
+    background: var(--brown-color);
+    cursor: pointer;
 }
