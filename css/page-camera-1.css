@@ -5,16 +5,19 @@
     --grey-color: #7d7d7d;
     --red-color: red;
 }
+
 html {
     font-size: 62.5%;
     list-style: 1.6rem;
     font-family: Roboto, sans-serif;
     box-sizing: border-box;
 }
-*{
+
+* {
     text-decoration: none;
 }
-.main{
+
+.main {
     margin: 20px auto;
     max-width: 1140px;
     display: flex;
@@ -22,188 +25,231 @@ html {
     justify-content: space-between;
     font-size: 13.5px;
 }
-.main img{
+
+.main img {
     width: 100%;
 }
-.chose-more{
+
+.chose-more {
     margin: 20px 0 20px 0;
 }
-.book_comment{
-    margin: 50px;
+
+.book_comment {
+    margin-top: 150px;
     display: flex;
     border-bottom: 1px dashed #7d7d7d;
 }
-.book_comment--left img{
+
+.book_comment--left img {
     width: 100px;
 }
-.book_comment--left{
+
+.book_comment--left {
     margin-right: 15px;
 }
-.book_comment--right{
+
+.book_comment--right {
     margin-top: 10px;
     font-size: 15px;
 }
 
 /* left */
-.main_left{
-    flex:0.94;
+.main_left {
+    flex: 0.94;
 }
-.cameras{
+
+.cameras {
     display: flex;
     font-size: 34px;
     margin: 10px 0 30px;
     font-weight: 640px;
     color: rgb(226, 115, 115);
 }
-.main_left--content h1{
+
+.main_left--content h1 {
     font-size: 40px;
     font-weight: bold;
 }
-.left--new_new{
-    padding:  5px;
-    background-color:rgb(238, 32, 32);
+
+.left--new_new {
+    padding: 5px;
+    background-color: rgb(238, 32, 32);
     color: white;
 }
-.left--new{
+
+.left--new {
     display: flex;
     margin: auto;
     opacity: 0.8;
     font-size: 13.5px;
     margin: 15px 0 15px;
 }
-.document{
+
+.document {
     font-size: 17px;
     line-height: 1.3;
 }
-.document span{
+
+.document span {
     opacity: 0.8;
     line-height: 1.7;
 }
-.document_more{
+
+.document_more {
     display: flex;
     font-size: 17px;
     line-height: 1.7;
     justify-content: space-between;
 }
-.document_more--left{
+
+.document_more--left {
     flex: 0.48;
     opacity: 0.8;
 }
-.document_more--right{
+
+.document_more--right {
     flex: 0.48;
 }
-.document_more--right_1{
+
+.document_more--right_1 {
     font-size: 20px;
     color: white;
     background-color: brown;
     padding: 10px;
 }
-.document_more--right_2{
+
+.document_more--right_2 {
     padding: 10px;
     opacity: 0.8;
-    border:1px solid #7d7d7d;
+    border: 1px solid #7d7d7d;
 }
-.book_comment--more1{
+
+.book_comment--more1 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
-.book_comment--more_more{
+
+.book_comment--more_more {
     flex: 0.49;
 }
+
 #nameInput,
-#emailInput{
+#emailInput {
     padding: 10px 230px 10px 0;
     opacity: 0.8;
 }
-#commentInput{
+
+#commentInput {
     padding: 10px 670px 300px 0;
     opacity: 0.8;
 }
 
 /* right */
-.main-content{
+.main-content {
     font-size: 25px;
-    font-weight:bold;
+    font-weight: bold;
     margin: px 0 40px 0;
     display: flex;
     justify-content: space-between;
 }
-.main_right{
+
+.main_right {
     flex: 0.035;
     display: inline;
 }
-.main_right--sticky{
+
+.main_right--sticky {
     position: sticky;
     position: -webkit-sticky;
     top: 90px;
 }
-.main_right--one{
+
+.main_right--one {
     position: relative;
     margin: 20px 0 20px;
 }
-.main_right--one h2{
+
+.main_right--one .animated-text {
     position: absolute;
     top: 65%;
-    left:4%;
+    left: 4%;
     font-weight: bold;
     color: #333;
     background-color: antiquewhite;
-    /* opacity: 0.8; */
+
 }
 
-.gui{
+.chudep .animated-text {
+    opacity: 0;
+    /* Ẩn dòng chữ ban đầu */
+    transform: translateY(20px);
+    /* Dịch chữ xuống */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    /* Thời gian và hiệu ứng transition */
+}
+
+.gui {
     margin-top: 20px;
     background-color: brown;
     color: white;
     padding: 10px;
 }
 
-.quangcao{
+.quangcao {
     max-width: 1140px;
     margin: auto;
 }
-.quangcao img{
+
+.quangcao img {
     width: 100%;
 }
+
 .hight {
-    transition: transform 0.3s; /* Làm mượt hiệu ứng */
+    transition: transform 0.3s;
+    /* Làm mượt hiệu ứng */
 }
-#hight--none-hover:hover{
+
+#hight--none-hover:hover {
     transform: scale(1);
 }
+
 .chose_hight:hover .hight {
-    
-    transform: scale(1.06); /* Phóng to ảnh khi hover vào đường dẫn (link) cha */
+
+    transform: scale(0.95);
+    /* Phóng to ảnh khi hover vào đường dẫn (link) cha */
 }
 
 
-.hot{
+.hot {
     position: absolute;
     top: 10px;
     left: 0;
     background-color: rgb(238, 32, 32);
     color: white;
     padding: 5px;
-    border-top-right-radius: 3px ;
-    border-bottom-right-radius: 3px ;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
+
 /*  */
-.mouse:hover{
+.mouse:hover {
     cursor: grab;
 }
-.star{
+
+.star {
     display: flex;
     margin-bottom: 10px;
     font-size: 13px;
     color: brown;
 }
-.icon{
+
+.icon {
     font-size: 20px;
     margin-right: 10px;
 }
-.blue{
+
+.blue {
     color: #2F9ED4;
     text-decoration: underline;
 }
-
