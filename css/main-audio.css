@@ -565,17 +565,12 @@ p {
     position: relative;
 }
 
-.audio-more_news-head a,
-.audio-more_news-head a,
 .audio-more_news-head a {
     font-size: 2rem;
     font-weight: 550;
-    
     color: var(--black-color);
 }
 
-.audio-more_news-head,
-.audio-more_news-head,
 .audio-more_news-head {
     margin-top: 30px;
     margin-bottom: 10px;
@@ -949,17 +944,17 @@ p {
 }
 
 .audio_guides .audio-more_news-head a:hover:after {
-    width: 43%;
+    width: 48%;
     left: 0;
     background-color: var(--pink-color);
 }
 .audio_buys .audio-more_news-head a:hover:after {
-    width: 49%;
+    width: 55%;
     left: 0;
     background-color: var(--pink-color);
 }
 .audio_opinions .audio-more_news-head a:hover:after {
-    width: 50%;
+    width: 55%;
     left: 0;
     background-color: var(--pink-color);
 }
